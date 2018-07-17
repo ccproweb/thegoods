@@ -31,7 +31,6 @@ function canAdd(HashTable)
     let res = bob.isEmpty();
     // assert
     let pass = res === false;
-    console.log(arguments.callee.name);
     console.log(`A hash Table can add Key, Value pairs: ${pass}`);
     return pass;
 }
@@ -71,7 +70,7 @@ function testATable(HashTable)
                  canGet,
                  canRemove]
     let gucci = true;
-    for(let test in tests)
+    for(let test of tests)
     {
         gucci = gucci & test(HashTable);
     }
