@@ -1,7 +1,3 @@
-// isEmpty
-// add(k,v)
-// get(k)
-// remove(k)
 class HashTable
 {
     constructor(size = 7)
@@ -25,4 +21,21 @@ class HashTable
     {
 
     }
+
+    isEmpty()
+    {
+        return this.count === 0;
+    }
+
+    read(key)
+    {
+
+    }
+
+    remove(key)
+    {
+
+    }
 }
+
+module.exports = HashTable;
