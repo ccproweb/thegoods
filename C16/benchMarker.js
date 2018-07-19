@@ -1,7 +1,3 @@
-// gnereate a lot of k,v paris
-// add them
-// find them
-// remove them
 const tables = [];
 
 function testAddManySpeed(tables)
@@ -19,7 +15,7 @@ function testAddSingleSpeed(tables)
         let bob = new table();
         let start = performance.now();
         // act
-        let i = 100;
+        let i = 1000;
         while(i-->0)
         {
             bob.add("name", "Bob");
@@ -31,7 +27,6 @@ function testAddSingleSpeed(tables)
         results.push(total);
         console.log(`${table.name} took ${total} milliseconds`);
     }
-    let mindx = findSmallest(results);
 }
 
 function generateTestDictionary()
