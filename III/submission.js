@@ -28,6 +28,17 @@ class HashTable
     {
 
     }
+    
+    _hash(key)
+    {
+        let sum = 0;
+        for(let c in key)
+        {
+            sum+=(key.charCodeAt(c)*(c+1))
+        }
+        return sum;
+            
+    }
 
     insert()
     {
