@@ -1,4 +1,6 @@
-const sorts = [];
+const {BryannaSort} = require("./lesorts");
+
+const sorts = [BryannaSort];
 
 function calcTime(start, end)
 {
@@ -36,3 +38,6 @@ function timeABunchOfSorts(sorts)
     }
     return chooseWinner(res);
 }
+
+let res = timeABunchOfSorts(sorts)
+console.log(res)
