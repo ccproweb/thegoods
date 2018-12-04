@@ -1,6 +1,6 @@
 // expeected behaviors and interface
 
-// borrowed from the python Set Class
+// borrowed from the python Set Class at https://docs.python.org/2/library/sets.html#sets.Set
 // - s.add(x)                           : add element x to s
 // - s.remove(x)                        : remove element x from s, exception if not present
 // - s.discard(x)                       : remove element x from s, doesnt throw 
@@ -20,6 +20,8 @@
 // - s.issubset(t)                      : returns boolean all elements s in t
 // - s.issuperset(t)                    : returnsbool all elements t in s
 // - s.copy(t)                          : return a set containing same elements as s
+
+see the python unit tests at https://github.com/python/cpython/blob/master/Lib/test/test_set.py
 
 const AlanSet = require("./tuesday.js");
 
