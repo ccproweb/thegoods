@@ -27,7 +27,7 @@ test("Can detect is empty",()=>{
 
 test("Can determine it isn't empty", ()=>{
     let rob = new PriorityQueue();
-    rob.add(1);
+    rob.add(pqElement(1));
     expect(rob.isEmpty()).toBeFalsy();
 })
 // .size()
@@ -55,7 +55,7 @@ test("PriorityQueue can add an element",()=>{
 
 test("PriorityQueue throws an exception when element without priority is added", ()=>{
     let rob = new PriorityQueue();
-    expect(rob.add(1)).toThrow("invalid input priority")
+    expect(rob.add(1)).toThrow()
 })
 
 test("Can add different priority levles correctly", ()=>{

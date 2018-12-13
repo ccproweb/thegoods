@@ -1,5 +1,17 @@
-monday - Hash Tables 1
-tuesday - Hash Tables 2
-wednesday - Tries
-thursday - BST + Tests
-friday - BELT EXAM DAY
+# Algorithms III: Week 3
+
+
+### Monday
+- Hash Tables
+
+### Tuesday
+- Hash Tables
+
+### Wednesday
+- Tries
+
+### Thursday
+- BST w/tests
+
+### Friday
+- Belt Exam
