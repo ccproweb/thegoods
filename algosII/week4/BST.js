@@ -1,6 +1,8 @@
 const BSTNode = require("./BSTNode.js");
+
 module.exports = class BST
 {
+    //this bst puts values less than or equalto to the left
     constructor()
     {
         this.root = null;

@@ -116,7 +116,7 @@ test("BST can add many things and stillll detect someting", ()=>{
 // setAdd
 
 // max
-test("")
+test("",()=>{})
 
 //min
 
