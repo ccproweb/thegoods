@@ -2,7 +2,7 @@ const BSTNode = require("./BSTNode.js");
 
 module.exports = class BST
 {
-    //this bst puts values less than or equalto to the left
+    //this bst puts values less than or equal to to the left
     constructor()
     {
         this.root = null;
@@ -48,5 +48,31 @@ module.exports = class BST
             Height: ${0}
             `
         )
+    }
+
+    removeAll() {
+        this.root = null;
+    }
+
+    remove(val) {
+        let removedNode;
+        // find node with val
+        let runnerParent = this.root;
+        let runner = this.root;
+        while(runner) {
+            if(runner.data === val) {
+                break;
+            }else{
+                runnerParent = runner;
+                runner = val > runner.data ? runner.right : runner.left;
+            }
+        }
+        // find replacement
+        if(runner) {
+            removedNode = 
+            // do le biz
+        }
+        // return node(?)
+        return removedNode;
     }
 }

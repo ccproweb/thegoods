@@ -24,6 +24,19 @@
 module.exports = class AlanSet
 {
     constructor()
-    {}
+    {
+        this.data = new LinkedList();
+    }
+
+    add(val) {
+        this.data.push(val);
+        return this;
+    }
+
+    size() {
+        return this.data.length();    
+    }
+
+
     
 }

@@ -32,7 +32,8 @@ class HashTable
 {
     constructor()
     {
-
+        this.table = new Array(19).fill(new Array());
+        this.size = 0;
     }
 
     hash(key)
@@ -42,9 +43,16 @@ class HashTable
         );
     }
 
-    insert()
+    loadFactor()
     {
+        // THIS SHOULD DO SOMETHING...probably
+    }
 
+    insert(key, value)
+    {
+        let idx = this.hash(key) % this.table.length;
+        this.table[idx].push([key, value]);
+        this.size++;
     }
 }
 

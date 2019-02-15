@@ -13,8 +13,8 @@ Your mission today:
 - Bubble Sort
 - Insertion Sort
 - Selection Sort
-- Shell Sort
-- Comb Sort
+- Shell Sort*
+- Comb Sort*
 
 ## Divide and conquer sorts
 - Merge Sort

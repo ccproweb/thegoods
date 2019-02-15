@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {{ context }}
+    <h2>Welcome to the Wall {{ context.user.name }}!</h2>
+    <a href="/logout">Logout Yo!</a>
+    <div>
+        here are your messages
+        <ul>
+            {% for message in context.messages %}
+                <li>
+                    <p>{{message.message}}</p>
+                    <span>{{message.first_name}}</span>
+                    <form action="/delete/message" method="POST">
+                        <input type="hidden" name="msg_id" value="{{message.id}}">
+                        <input type="submit" value="BOOP!">
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <h4>
+            send a message!
+        </h4>
+        {% for u in context.users %}
+        <form action="/message" method="POST">
+            <input type="hidden" name="recipient_id" value="{{ u.id }}">
+            <input type="hidden" name="sender_id" value="{{ context.user.id }}">
+            <input type="text" name="message" placeholder="send a message to {{u.first_name}}">
+            <input type="submit" value="message a peep">
+        </form>
+        {% endfor %}
+    </div>
+</body>
+</html>

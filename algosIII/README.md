@@ -1,4 +1,4 @@
-# This repository is for monthly content related to MEAN and stack III algorithms
+# This repository is for monthly content related to DOJO things and algorithms
 
 ## Overview
 

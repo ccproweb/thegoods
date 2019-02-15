@@ -8,6 +8,7 @@
     - Specific Functinoality
     - More operations
     - Class Implementation
+    - Have the peeps update (a) peep's github project with set testing info & practice making pull requests & tests
 - Wednesday - Priority Queue
     - PQ Interface + Expected Behavior
     - Test it out!

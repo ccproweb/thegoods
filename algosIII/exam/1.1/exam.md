@@ -28,7 +28,7 @@ Alternative names for hash tables are: ____________, ____________, ____________ 
 
 This data structure is made up of ________ - ________ pairs.
 
-Write code for inserting a new entry into a Hash Table, keeping in mind the load factor.
+Update the HashTable class's insert method to account for a load factor.
 
 ### Question 4 Sorts
 

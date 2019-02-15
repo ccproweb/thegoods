@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hi There, welcome to logreg 4 walle</h1>
+    <div>
+        <h3>Login Here!</h3>
+        <form action="/login" method="POST">
+            <input type="text" name="email" placeholder="email">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" value="login!">
+        </form>
+    </div>
+    <div>
+        {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+            {% if messages %}                            <!-- check if there are any messages -->
+                {% for message in messages %}            <!-- loop through the messages -->
+                    <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <h3>Register Here!</h3>
+        <form action="/register" method="POST">
+            <input type="text" name="first_name" placeholder="first name!">
+            <input type="text" name="last_name" placeholder="last name!">
+            <input type="text" name="email" >
+            <input type="password" name="password">
+            <input type="password" name="confirm_password">
+            <input type="submit" value="register!">
+        </form>
+    </div>
+</body>
+</html>

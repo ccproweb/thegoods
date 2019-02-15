@@ -21,7 +21,7 @@
 // - s.difference_update(t)             : sets s without elements found in t
 // - s.symmetric_difference_update(t)   : sets to only have elements not in s AND t
 // - s.missing(e)                       : returns boolean e NOT in s
-// - s.copy(t)                          : return a set containing same elements as s
+// - s.copy()                          : return a set containing same elements as s
 
 // see the python unit tests at https://github.com/python/cpython/blob/master/Lib/test/test_set.py
 
@@ -30,4 +30,10 @@ const AlanSet = require("./tuesday.js");
 test("Can instantiate a set!",()=>{
     let rob = new AlanSet();
     expect(rob instanceof AlanSet).toBe(true);
+});
+
+test("can add a thing", () =>{
+    let rob = new AlanSet();
+    rob.add(5);
+    expect(rob.size()).toBe(1);
 })
