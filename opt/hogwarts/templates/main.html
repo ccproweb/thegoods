@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <title>Hogwarts - Main Door</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Hogwarts!</h1>
+        </header>
+        <main>
+            <div>
+                {% with messages = get_flashed_messages() %}   
+                    {% if messages %}                           
+                        {% for message in messages %}            
+                            <p>{{message}}</p>                   
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <h3>Get Sorted</h3>
+                <form action="/register" method="POST">
+                        <label for="username">username</label>
+                        <input type="text" name="username">
+                        <label for="email">email</label>
+                        <input type="text" name="email">
+                        <label for="password">password</label>
+                        <input type="password" name="password">
+                        <label for="confirm">confirm</label>
+                        <input type="password" name="confirm"> 
+                        <select name="house" id=""></select>
+                        <input type="submit" value="enter!">
+                    </form>
+            </div>
+            <div>
+                <h3>Log In!</h3>
+                <form action="/login" method="POST">
+                    <label for="username">username</label>
+                    <input type="text" name="username">
+                    <label for="password">password</label>
+                    <input type="password" name="password">
+                    <input type="submit" value="enter!">
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
